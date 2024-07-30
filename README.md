@@ -1,2 +1,3 @@
 # lupin
-inference engine on GPUs
+
+Inference API aggregator for performance requirements. 
