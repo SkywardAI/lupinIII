@@ -1,7 +1,8 @@
-FROM rust:1.79.0-slim-bookworm
+FROM rust:1.80.0-slim-bookworm
 
 WORKDIR app
 COPY . .
+RUN apt update && apt install -y protobuf-compiler libssl-dev
 RUN cargo build --release
 RUN rm src/*.rs
 
