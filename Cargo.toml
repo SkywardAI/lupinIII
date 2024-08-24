@@ -7,10 +7,20 @@ edition = "2021"
 
 [dependencies]
 axum = "0.7.5"
+env_logger = "0.11.5"
 futures = "0.3.30"
 lancedb = "0.9.0"
+log = "0.4.22"
+pollster = "0.3.0"
+serde = "1.0.209"
 tokio = {version = "1.39.1", features = ["full"]}
 # helpful for testing
 tower = "0.4.13"
+tower-http = { version = "0.5.2", features = ["trace"] }
 tracing = "0.1.40"
 tracing-subscriber = { version="0.3.18", features = ["env-filter"] }
+utoipa = { version = "4.2.3", features = ["axum_extras"] }
+utoipa-rapidoc = { version = "4.0.0", features = ["axum"] }
+utoipa-redoc = { version = "4.0.0", features = ["axum"] }
+utoipa-swagger-ui = { version = "7.1.0", features = ["axum"] }
+wgpu = "22.1.0"
